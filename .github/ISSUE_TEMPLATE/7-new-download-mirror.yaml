@@ -20,7 +20,8 @@ body:
       https://<company.awesome>(/jenkins)
   - type: textarea
     attributes:
-      label: Mirror Provider Name (usually the organisation name):
+      label: |
+        Mirror Provider Name (usually the organisation name):
     validations:
       required: true
     placeholder: |
