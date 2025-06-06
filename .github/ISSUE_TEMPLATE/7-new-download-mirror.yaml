@@ -13,10 +13,20 @@ body:
   - type: input
     id: mirror_http_url
     attributes:
-      label: Mirror HTTPS URL
+      label: Mirror URL
       description: |
-        Mirror HTTPS public URL (details at <https://www.jenkins.io/download/mirrors/#an-http-server-to-serve-files-for-the-end-users>):
+        Public HTTPS URL (details at <https://www.jenkins.io/download/mirrors/#an-http-server-to-serve-files-for-the-end-users>):
       placeholder: |
         https://<company.awesome>(/jenkins)
     validations:
       required: true
+  - type: input
+    id: mirror_name
+    attributes:
+      label: Mirror Provider Name 
+      description: Usually the organisation name
+      placeholder: |
+        Awesome Company
+    validations:
+      required: true
+    
