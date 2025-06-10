@@ -53,9 +53,9 @@ body:
       label: Mirror Rsync URL
       # NOTE: Keep 'description' up to date with <https://www.jenkins.io/download/mirrors/> page content
       description: |
-        The rsync URL of your server for scanning files from Jenkins infrastructure.
-        Note: You can restrict inbound requests to the Jenkins infrastructure IPs specified at <https://reports.jenkins.io/infrastructure/v2/index.json> (JSON query path: `get.jenkins.io".outbound_ips[]`).
-        Our scanning IPs do not change often (once a year usually) but we update the JSON daily in case of any change.
+        The rsync URL of your server for scanning files from Jenkins infrastructure:
+        - You can restrict inbound requests to the Jenkins infrastructure IPs specified at <https://reports.jenkins.io/infrastructure/v2/index.json> (JSON query path: `get.jenkins.io".outbound_ips[]`).
+        - Our scanning IPs do not change often (once a year usually) but we update the JSON daily in case of any change.
       placeholder: |
         rsync://<company.awesome>(/jenkins)
     validations:
